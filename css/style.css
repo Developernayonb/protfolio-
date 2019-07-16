@@ -1,0 +1,671 @@
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto:300,400,500,700,900');
+ body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+}
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #2B96CC;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	color: #313131;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 16px;
+	font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+	line-height: 24px;
+	color: #7e7e7e;
+	margin-bottom: 18px;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+.theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.separator {
+	border-top: 1px solid #f2f2f2
+}
+/* button style */
+
+.btn {
+	-moz-user-select: none;
+	background: #1696e7 none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 13px 25px;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.breadcrumb > .active {
+	color: #888;
+}
+.owl-carousel .owl-nav div {
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	height: 40px;
+	left: 20px;
+	line-height: 40px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 40px;
+}
+.owl-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 20px;
+}
+.owl-carousel:hover .owl-nav div {
+	opacity: 1;
+	visibility: visible;
+}
+.owl-carousel .owl-nav div:hover {
+	background: #2B96CC;
+	color: #fff
+}
+
+/* scrollUp */
+#scrollUp {
+	background: #7DBA2F;
+	height: 35px;
+	width: 35px;
+	right: 50px;
+	bottom: 77px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 34px;
+}
+#scrollUp:hover {
+	background: #444;
+}
+/*=========== Header Part Code CSS ===========*/
+.header-area {
+    background: #55A593;
+}
+.main-menu ul li {
+    display: inline-block;
+    padding: 25px 9px;
+}
+
+.main-menu ul li a {
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 5px 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.main-menu ul li a:hover {
+    background: #2862b1;
+}
+
+.logo img {margin-top: 25px;}
+
+
+
+.header-area.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #2d8c83;
+    z-index: 99;
+}
+/*=========== Slider Part Code CSS ===========*/
+.slider-bg{
+    width: 100%;
+    height: 100Vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+.sllider-content h1 {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 30px;
+}
+.sllider-content p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.btn-one {
+    color: #fff;
+    display: inline-block;
+    padding: 25px 50px;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    font-size: 19px;
+    position: relative;
+    text-transform: uppercase;
+}
+.slider-bg:after {
+    content: "";
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    z-index: -1;
+}
+.btn-one:after {
+    content: "";
+    position: absolute;
+    background: #444;
+    width: 100%;
+    height: 101%;
+    top: 0;
+    left: 2px;
+    border-radius: 40px;
+    opacity: .7;
+    z-index: -1;
+}
+.img-thumb{
+    border: 8px solid #fff;
+    box-shadow: 0 0 3px #000;
+}
+/*Dots*/
+.owl-dot {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #7fff00;
+    display: inline-block;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+
+.owl-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 25px;
+    z-index: 99;
+}
+.owl-dot.active {
+    background: #2862b1;
+    border: 1px solid #2862b1;
+}
+/*=========== About Part Code CSS ===========*/
+.section-title h2 {
+    border: 3px solid #7fff00;
+    display: inline;
+    padding: 15px 100px;
+    color: #4f4f4f;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .5s;
+    background: #fff;
+}
+.section-title h2:hover {
+    background: #7fff00;
+    color: #fff;
+}
+.about-thumbnail img {
+    width: 100%;
+    border: 20px solid #fff;
+    box-shadow: 0 0 20px #000;
+    transition: .5s;
+}
+.about-thumbnail img:hover {
+    padding: 10px;
+}
+.about-info h4 {
+    color: #444444;
+    font-size: 29px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.about-info h5 {
+    color: #576876;
+    font-size: 18px;
+}
+.about-info p {
+    color: #576876;
+    font-size: 16px;
+}
+.social-icon ul li {
+    display: inline-block;
+}
+.social-icon ul li a {
+    color: #fff;
+    background: #2862b1;
+    font-size: 30px;
+    padding: 10px 15px;
+    border-radius: 100%;
+    margin-right: 10px;
+    transition: .9s;
+}
+.social-icon ul li a:hover {
+    background: #7fff00;  
+}
+
+/*=========== Education Part Code CSS ===========*/
+.eduaciton-area{
+    width: 100%;
+    background-image: url(../img/education-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;  
+}
+.mid-line {
+    width: 1px;
+    border: 2px solid #000;
+    height: 270px;
+    margin-left: 75px;
+}
+.mid-line-last{
+    width: 1px;
+    border: 2px solid #000;
+    height: 100px;
+    margin-left: 75px;
+}
+.mid-line-last i {
+    font-size: 50px;
+    border-radius: 100%;
+    color: #fff;
+    background: #000;
+    padding: 15px 10px;
+    margin-left: -40px;
+    margin-top: 75px;
+}
+.mid-line i {
+    font-size: 50px;
+    border-radius: 100%;
+    color: #fff;
+    background: #000;
+    padding: 18px 15px;
+    margin-left: -45px;
+    margin-top: -2px;
+}
+.content-text {
+    border: 2px solid #000;
+    padding: 30px 25px;
+    background: #fff;
+}
+.content-text h3 {
+    color: #444;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content-text span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #576876;
+}
+.content-text p {
+    font-size: 16px;
+    color: #576875;
+}
+/*=========== Skills Part Code CSS ===========*/
+.skillbar {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0px;
+    width: 100%;
+    background: #eee;
+    height: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.skillbar-title {
+position: absolute;
+top: 0;
+left: 0;
+width: 117px;
+font-weight: bold;
+font-size: 15px;
+color: #ffffff;
+background: #6adcfa;
+border-top-left-radius: 3px;
+border-bottom-left-radius: 3px;
+background: rgba(0, 0, 0, 0.1);
+padding: 0px 10px;
+height: 20px;
+line-height: 20px;
+}
+
+.skillbar-bar {
+height: 20px;
+width: 0px;
+background: #6adcfa;
+border-radius: 10px;
+display: inline-block;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 3px;
+    top: 0px;
+    font-size: 12px;
+    height: 35px;
+    line-height: 18px;
+    color: #576875;
+    font-weight: 700;
+}
+.skillbar-img img {
+    width: 100%;
+    margin-left: 100px;
+    transition: .9s;
+    
+}
+.skillbar-img img:hover{
+   transform: skewX(15deg);
+}
+/*=========== Protfolio Part Code CSS ===========*/
+.protfolio{
+    background: #E6E7F0;
+}
+.protfolio-thumbnail img {
+    width: 100%;
+    border: 20px solid #fff;
+    box-shadow: 0 0 29px #ff0000;
+    transition: .5s;
+    margin-bottom: 30px;
+}
+.protfolio-thumbnail img:hover {
+    transform: scale(.9);
+}
+/*=========== Testmonial Part Code CSS ===========*/
+.test-bg {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+.test-bg:after {
+    position: absolute;
+    content: "";
+    background: #000;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: .6;
+}
+.testmonial-item img {border-radius: 100%;}
+
+.testmonial-item h4 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.testmonial-item p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.owl-carousel .owl-item img {
+    display: inline;
+    width: 15%;
+}
+/*=========== Contact Part Code CSS ===========*/
+.contact-title h2 {
+    color: #fff;
+    border: 3px solid #fff;
+    display: inline;
+    padding: 15px 100px;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .5s;
+}.contact-title h2:hover {
+    background: #5fff00;
+    border: 3px solid #5fff00;
+}
+
+.contact {
+    background: url(../img/contact.bg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    z-index: 0;
+    color: #fff;
+    background-attachment: fixed;
+}
+.contact:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background: #000;
+    z-index: -1;
+    opacity: .55;
+}
+.contact input {
+    background: transparent;
+    border: 1px solid #fff;
+    height: 50px;
+    margin-bottom: 50px;
+}
+.form-control {
+    font-size: 18px;
+  }
+.contact textarea {
+    background: transparent;
+    border: 1px solid #fff;
+    height: 180px;
+    margin-bottom: 25px;
+    padding-top: 20px;
+}
+.contact button {
+    background: #7fff00;
+    border: 0;
+    font-size: 20px;
+    padding: 10px 32px;
+    transition: .9s;
+    text-transform: uppercase;
+    color: #fff;
+}
+.contact button:hover {
+    background: #fff;
+    color: #000;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #fff;
+}
+/*=========== Footer Part Code CSS ===========*/
+   
+.footer-area {
+    background: #55A593;
+}
+
+.footer-content i {
+    color: #fff;
+    font-size: 40px;
+    background: #000;
+    border: 1px solid #fff;
+    padding: 20px 20px;
+    border-radius: 100%;
+    margin-bottom: 25px;
+    transition: .9s;
+}
+.footer-content i:hover{color: #000;
+background: #7fff00;
+    border: 1px solid #7fff00;
+}
+.footer-content i:hover {
+    transform: rotate(360deg);
+}
+.footer-content p {
+    font-size: 16px;
+    color: #fff;
+}
+.footer-widget p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 50px;
+}
